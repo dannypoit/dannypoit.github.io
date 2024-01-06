@@ -20,6 +20,16 @@ body {
     padding: 1rem;
 }
 
+h1:focus,
+h1:hover,
+time:focus,
+time:hover,
+.author-name:focus,
+.author-name:hover {
+    color: #5f5f5f;
+    cursor: pointer;
+}
+
 .attribution {
     display: none;
     font-size: 11px;
@@ -69,6 +79,13 @@ body {
     font-weight: 700;
     margin-bottom: 1rem;
     padding: .375rem .875rem;
+}
+
+.category:focus,
+.category:hover {
+    background-color: #eedc99;
+    color: #5f5f5f;
+    cursor: pointer
 }
 
 .description {
