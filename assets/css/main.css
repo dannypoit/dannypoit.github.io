@@ -10,6 +10,16 @@
     font-style: 'italic';
 }
 
+body {
+    align-items: center;
+    background-color: #F4D04E;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    font-family: 'Figtree';
+    padding: 1rem;
+}
+
 .attribution {
     display: none;
     font-size: 11px;
@@ -35,16 +45,6 @@
 .author-name {
     font-size: .85rem;
     font-weight: 800;
-}
-
-body {
-    align-items: center;
-    background-color: #F4D04E;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    font-family: 'Figtree';
-    padding: 1rem;
 }
 
 .card {
@@ -75,4 +75,8 @@ body {
     color: gray;
     line-height: 1.5;
     margin-bottom: 1.5rem;
+}
+
+.h2 {
+    font-size: 1.5em;
 }
