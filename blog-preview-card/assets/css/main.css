@@ -90,13 +90,13 @@ textarea:not([rows]) {
 
 @font-face {
     font-family: 'Figtree';
-    src: url('/assets/fonts/Figtree-VariableFont_wght.ttf');
+    src: url('../fonts/Figtree-VariableFont_wght.ttf');
     font-style: 'normal';
 }
 
 @font-face {
     font-family: 'Figtree Italic';
-    src: url('/assets/fonts/Figtree-Italic-VariableFont_wght.ttf');
+    src: url('../fonts/Figtree-Italic-VariableFont_wght.ttf');
     font-style: 'italic';
 }
 
