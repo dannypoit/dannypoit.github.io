@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/dannypoit/dannypoit.github.io)
-- Live Site URL: [Add live site URL here](https://dannypoit.github.io/)
+- Solution URL: [https://www.frontendmentor.io/solutions/blog-preview-card-lVvdEoEzwU](https://www.frontendmentor.io/solutions/blog-preview-card-lVvdEoEzwU)
+- Live Site URL: [https://dannypoit.github.io/blog-preview-card/](https://dannypoit.github.io/blog-preview-card/)
 
 ## My process
 
