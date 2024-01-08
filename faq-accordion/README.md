@@ -49,6 +49,7 @@ Users should be able to:
 - That `<button>`s can be tabbed through by keyboard without using `tabindex`.
 - How to use CSS variables.
 - How to animate the expanding of sections (by animating `max-height`).
+- Headings (`<h2>` etc.) are not allowed as a child of `<button>` elements.
 
 Each FAQ is created as a section. According to [this article](https://www.semrush.com/blog/semantic-html5-guide/), "Using `<section>` is a way of grouping nearby content of a similar theme."
 

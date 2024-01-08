@@ -139,12 +139,6 @@ h1:before {
     width: 2rem;
 }
 
-h2 {
-    font-size: .9375rem;
-    font-weight: 600;
-    margin-top: 0;
-}
-
 img {
     height: 40vh;
     object-fit: cover;
@@ -221,6 +215,8 @@ p {
     background: transparent;
     border: 0;
     cursor: pointer;
+    font-size: .9375rem;
+    font-weight: 600;
     margin-top: 1.5rem;
     padding: .25rem 4rem .25rem 0;
     position: relative;
@@ -259,10 +255,6 @@ p {
         width: 3rem;
     }
 
-    h2 {
-        font-size: 1.125rem;
-    }
-
     p {
         font-size: 1rem;
     }
@@ -278,6 +270,10 @@ p {
     .card {
         max-width: none;
         width: 82%;
+    }
+    
+    .question {
+        font-size: 1.125rem;
     }
 }
 
