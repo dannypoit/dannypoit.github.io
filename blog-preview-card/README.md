@@ -87,6 +87,17 @@ time:hover,
 }
 ```
 
+#### Update
+
+Some more things I learned in the comments thanks to [@rayaatta](https://www.frontendmentor.io/profile/rayaatta) and [@Islandstone89](https://www.frontendmentor.io/profile/Islandstone89):
+
+- `<main>`, `<footer>`, and `<header>` are all landmark tags therefore none should be inside the other.
+- Every web page should have a `<main>` that wraps all content except for `<header>` and `<footer>`, as this helps screen readers identify the main section of the page.
+- `<div>`s are used for sectioning and don't have any semantic value, therefore you should not put text directly into them, as that doesn't help screen readers recognize the importance of such text.
+- `height: 100vh` should not be set on the body, as it causes overflow issues on mobile.
+- All images must have an `alt` attribute, but it can be left empty if the image is decorative.
+- [CSS Reset](https://piccalil.li/blog/a-more-modern-css-reset/)
+
 ### Continued development
 
 I would like to get more comfortable with Semantic HTML. I would like to try CSS nesting within a project and see how easy it makes it compared to Sass/SCSS. Depending on my conclusions there, I might like to learn how to quickly set up Sass/SCSS on a project. (All the projects I've used it already had it set up through Gulp, Grunt, etc.)
