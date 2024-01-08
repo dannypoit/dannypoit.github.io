@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: TBD
+- Solution URL: [https://www.frontendmentor.io/solutions/faq-accordion-fR1BRPT4EH](https://www.frontendmentor.io/solutions/faq-accordion-fR1BRPT4EH)
 - Live Site URL: [https://dannypoit.github.io/faq-accordion/](https://dannypoit.github.io/faq-accordion/)
 
 ## My process
