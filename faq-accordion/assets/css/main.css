@@ -102,14 +102,17 @@ textarea:not([rows]) {
 
 html {
     --dark-purple: #3e52a3;
+    --gray: #817782;
+    --light-gray: #F9EEFF;
     --light-purple: #AD28EB;
 }
 
 body {
     align-items: center;
-    background-color: #F9EEFF;
+    background-color: var(--light-gray);
     display: flex;
     flex-direction: column;
+    margin: 0;
     min-height: 100vh;
     justify-content: center;
     font-family: 'Work Sans';
@@ -117,11 +120,85 @@ body {
     position: relative;
 }
 
+/* body * {
+    border: 1px dashed lightgray;
+} */
+
+h1 {
+    font-size: 2.25rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    padding-left: 3.5rem;
+    position: relative;
+}
+
+h1:before {
+    background: url('../images/icon-star.svg') center no-repeat;
+    background-size: 80%;
+    content: '';
+    position: absolute;
+    top: .25rem;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+}
+
+h2 {
+    font-size: .9375rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+h2:after {
+    background: url('../images/icon-plus.svg') no-repeat;
+    content: '';
+    position: absolute;
+    top: -.25rem;
+    right: 0;
+    height: 3rem;
+    width: 3rem;
+}
+
+h2.open:after {
+    background: url('../images/icon-minus.svg') no-repeat;
+}
+
 img {
     height: 40vh;
     object-fit: cover;
     position: absolute;
     top: 0;
+}
+
+p {
+    color: var(--gray);
+    font-size: .875rem;
+}
+
+#bgMobile {
+    display: block;
+    max-width: none;
+    width: 100%;
+}
+
+#bgDesktop {
+    display: none;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease-out;
+}
+
+.answer.open {
+    max-height: 10rem;
+    transition: max-height .25s ease-in;
+}
+
+.answer:not(.open) {
+    margin-top: 0;
 }
 
 .attribution {
@@ -140,8 +217,78 @@ img {
 .card {
     background-color: #fff;
     border-radius: 1rem;
-    box-shadow: 1rem 1rem 5rem #80808040;
+    box-shadow: 1rem 1rem 5rem #80808050;
     display: block;
+    max-width: 38rem;
     padding: 2rem;
     z-index: 1;
+}
+
+.faq {
+    padding-bottom: 1.5rem;
+}
+
+.faq:not(:last-child) {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.faq:last-child {
+    padding-bottom: 0;
+}
+
+.question {
+    cursor: pointer;
+    padding-right: 4rem;
+}
+
+@media (min-width: 48rem) {
+    h1 {
+        font-size: 3.25rem;
+        padding-left: 4rem;
+    }
+
+    h1:before {
+        background-size: 100%;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    h2 {
+        font-size: 1.125rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #bgMobile {
+        display: none;
+    }
+
+    #bgDesktop {
+        display: block;
+    }
+
+    .card {
+        max-width: none;
+        width: 82%;
+    }
+}
+
+@media (min-width: 62em) {
+    .card {
+        width: 63%;
+    }
+}
+
+@media (min-width: 75em) {
+    .card {
+        width: 52%;
+    }
+}
+
+@media (min-width: 90rem) {
+    .card {
+        width: 43%;
+    }
 }
