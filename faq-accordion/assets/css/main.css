@@ -146,22 +146,7 @@ h1:before {
 h2 {
     font-size: .9375rem;
     font-weight: 600;
-    margin-top: 1.5rem;
-    position: relative;
-}
-
-h2:after {
-    background: url('../images/icon-plus.svg') no-repeat;
-    content: '';
-    position: absolute;
-    top: -.25rem;
-    right: 0;
-    height: 3rem;
-    width: 3rem;
-}
-
-h2.open:after {
-    background: url('../images/icon-minus.svg') no-repeat;
+    margin-top: 0;
 }
 
 img {
@@ -201,7 +186,7 @@ p {
     margin-top: 0;
 }
 
-.attribution {
+.attribution p {
     font-size: .875rem;
     text-align: center;
 }
@@ -237,8 +222,33 @@ p {
 }
 
 .question {
+    background: transparent;
+    border: 0;
     cursor: pointer;
-    padding-right: 4rem;
+    margin-top: 1.5rem;
+    padding: .25rem 4rem .25rem 0;
+    position: relative;
+    text-align: start;
+    width: 100%;
+}
+
+.question:after {
+    background: url('../images/icon-plus.svg') 100% 0 no-repeat;
+    content: '';
+    position: absolute;
+    top: -0.125rem;
+    right: 0;
+    height: 3rem;
+    width: 3rem;
+}
+
+.question:focus,
+.question:hover {
+    color: var(--light-purple);
+}
+
+.question.open:after {
+    background: url('../images/icon-minus.svg') 100% 0 no-repeat;
 }
 
 @media (min-width: 48rem) {
