@@ -183,7 +183,7 @@ summary:after {
     background: url('../images/icon-plus.svg') 100% 0 no-repeat;
     content: '';
     position: absolute;
-    top: -0.125rem;
+    top: 0;
     right: 0;
     height: 3rem;
     width: 3rem;
@@ -214,6 +214,7 @@ summary::marker {
 } */
 
 .attribution p {
+    color: #736b74;
     font-size: .875rem;
     text-align: center;
 }
